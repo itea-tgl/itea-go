@@ -3,8 +3,8 @@
 package signal
 
 import (
-	"github.com/CalvinDjy/iteaGo/ilog"
-	"github.com/CalvinDjy/iteaGo/util/integer"
+	"github.com/itea-tgl/itea-go/ilog"
+	"github.com/itea-tgl/itea-go/util/integer"
 	"os"
 	"os/signal"
 	"syscall"

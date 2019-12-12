@@ -1,8 +1,8 @@
 package ihttp
 
 import (
-	"github.com/CalvinDjy/iteaGo/constant"
-	"github.com/CalvinDjy/iteaGo/system"
+	"github.com/itea-tgl/itea-go/constant"
+	"github.com/itea-tgl/itea-go/system"
 	"gopkg.in/yaml.v2"
 	"io/ioutil"
 	"os"

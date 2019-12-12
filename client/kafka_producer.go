@@ -2,8 +2,8 @@ package client
 
 import (
 	"fmt"
-	"github.com/CalvinDjy/iteaGo/ilog"
 	"github.com/Shopify/sarama"
+	"github.com/itea-tgl/itea-go/ilog"
 )
 
 type KafkaSyncProducer struct {

@@ -4,7 +4,7 @@ import (
 	"flag"
 	"fmt"
 	"github.com/goinggo/mapstructure"
-	"github.com/CalvinDjy/iteaGo/constant"
+	"github.com/itea-tgl/itea-go/constant"
 	"gopkg.in/yaml.v2"
 	"io/ioutil"
 	"os"

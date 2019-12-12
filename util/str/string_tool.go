@@ -1,7 +1,7 @@
 package str
 
 import (
-	"github.com/CalvinDjy/iteaGo/ilog"
+	"github.com/itea-tgl/itea-go/ilog"
 	"strconv"
 )
 

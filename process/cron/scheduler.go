@@ -3,8 +3,8 @@ package cron
 import (
 	"context"
 	"fmt"
-	"github.com/CalvinDjy/iteaGo/ilog"
-	"github.com/CalvinDjy/iteaGo/ioc/iface"
+	"github.com/itea-tgl/itea-go/ilog"
+	"github.com/itea-tgl/itea-go/ioc/iface"
 	"github.com/robfig/cron"
 	"reflect"
 )

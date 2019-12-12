@@ -1,11 +1,11 @@
 package ioc
 
 import (
-	"github.com/CalvinDjy/iteaGo/ioc/bean"
-	"github.com/CalvinDjy/iteaGo/process/cron"
-	"github.com/CalvinDjy/iteaGo/process/ihttp"
-	"github.com/CalvinDjy/iteaGo/process/kafka"
-	"github.com/CalvinDjy/iteaGo/process/thrift"
+	"github.com/itea-tgl/itea-go/ioc/bean"
+	"github.com/itea-tgl/itea-go/process/cron"
+	"github.com/itea-tgl/itea-go/process/ihttp"
+	"github.com/itea-tgl/itea-go/process/kafka"
+	"github.com/itea-tgl/itea-go/process/thrift"
 	"reflect"
 	"strings"
 )

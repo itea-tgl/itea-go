@@ -2,13 +2,13 @@ package itea
 
 import (
 	"context"
-	"github.com/CalvinDjy/iteaGo/ilog"
-	"github.com/CalvinDjy/iteaGo/ioc"
-	"github.com/CalvinDjy/iteaGo/ioc/bean"
-	"github.com/CalvinDjy/iteaGo/system"
-	"github.com/CalvinDjy/iteaGo/process"
-	"github.com/CalvinDjy/iteaGo/signal"
-	"github.com/CalvinDjy/iteaGo/constant"
+	"github.com/itea-tgl/itea-go/ilog"
+	"github.com/itea-tgl/itea-go/ioc"
+	"github.com/itea-tgl/itea-go/ioc/bean"
+	"github.com/itea-tgl/itea-go/system"
+	"github.com/itea-tgl/itea-go/process"
+	"github.com/itea-tgl/itea-go/signal"
+	"github.com/itea-tgl/itea-go/constant"
 	"os"
 	"sync"
 )

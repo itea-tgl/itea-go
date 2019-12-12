@@ -3,11 +3,11 @@ package kafka
 import (
 	"context"
 	"fmt"
-	"github.com/CalvinDjy/iteaGo/constant"
-	"github.com/CalvinDjy/iteaGo/ilog"
-	"github.com/CalvinDjy/iteaGo/ioc/iface"
 	"github.com/Shopify/sarama"
 	cluster "github.com/bsm/sarama-cluster"
+	"github.com/itea-tgl/itea-go/constant"
+	"github.com/itea-tgl/itea-go/ilog"
+	"github.com/itea-tgl/itea-go/ioc/iface"
 	"strings"
 )
 

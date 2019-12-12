@@ -2,14 +2,14 @@ package ioc
 
 import (
 	"context"
-	"github.com/CalvinDjy/iteaGo/ilog"
-	"github.com/CalvinDjy/iteaGo/ioc/bean"
-	"github.com/CalvinDjy/iteaGo/process"
-	"github.com/CalvinDjy/iteaGo/system"
+	"fmt"
+	"github.com/itea-tgl/itea-go/ilog"
+	"github.com/itea-tgl/itea-go/ioc/bean"
+	"github.com/itea-tgl/itea-go/process"
+	"github.com/itea-tgl/itea-go/system"
 	"reflect"
 	"strings"
 	"sync"
-	"fmt"
 )
 
 const (

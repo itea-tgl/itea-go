@@ -3,10 +3,10 @@ package client
 import (
 	"context"
 	"fmt"
-	"github.com/CalvinDjy/iteaGo/constant"
-	"github.com/CalvinDjy/iteaGo/ilog"
-	"github.com/CalvinDjy/iteaGo/system"
 	"github.com/go-redis/redis"
+	"github.com/itea-tgl/itea-go/constant"
+	"github.com/itea-tgl/itea-go/ilog"
+	"github.com/itea-tgl/itea-go/system"
 	"strings"
 	"time"
 )

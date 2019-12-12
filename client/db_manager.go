@@ -3,10 +3,10 @@ package client
 import (
 	"database/sql"
 	"fmt"
-	"github.com/CalvinDjy/iteaGo/constant"
-	"github.com/CalvinDjy/iteaGo/ilog"
-	"github.com/CalvinDjy/iteaGo/system"
 	_ "github.com/go-sql-driver/mysql"
+	"github.com/itea-tgl/itea-go/constant"
+	"github.com/itea-tgl/itea-go/ilog"
+	"github.com/itea-tgl/itea-go/system"
 	"sync"
 	"time"
 )

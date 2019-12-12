@@ -6,7 +6,7 @@ import (
 	"crypto/sha1"
 	"encoding/base64"
 	"fmt"
-	"github.com/CalvinDjy/iteaGo/ilog"
+	"github.com/itea-tgl/itea-go/ilog"
 	"io"
 	"math/rand"
 	"time"

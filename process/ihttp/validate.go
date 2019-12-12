@@ -3,7 +3,7 @@ package ihttp
 import (
 	"errors"
 	"fmt"
-	"github.com/CalvinDjy/iteaGo/util/str"
+	"github.com/itea-tgl/itea-go/util/str"
 	"net/http"
 	"strings"
 )

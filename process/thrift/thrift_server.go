@@ -3,9 +3,9 @@ package thrift
 import (
 	"context"
 	"fmt"
-	"github.com/CalvinDjy/iteaGo/ilog"
-	"github.com/CalvinDjy/iteaGo/ioc/iface"
 	"github.com/apache/thrift/lib/go/thrift"
+	"github.com/itea-tgl/itea-go/ilog"
+	"github.com/itea-tgl/itea-go/ioc/iface"
 )
 
 type ThriftServer struct {

@@ -1,9 +1,9 @@
 package system
 
 import (
-	"github.com/CalvinDjy/iteaGo/ilog"
-	"strings"
 	"fmt"
+	"github.com/itea-tgl/itea-go/ilog"
+	"strings"
 )
 
 const LOG_KEY = "log"

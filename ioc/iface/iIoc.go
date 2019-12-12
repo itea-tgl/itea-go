@@ -1,7 +1,7 @@
 package iface
 
 import (
-	"github.com/CalvinDjy/iteaGo/ioc/bean"
+	"github.com/itea-tgl/itea-go/ioc/bean"
 	"reflect"
 )
 

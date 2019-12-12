@@ -2,8 +2,8 @@ package ihttp
 
 import (
 	"fmt"
-	"github.com/CalvinDjy/iteaGo/ilog"
-	"github.com/CalvinDjy/iteaGo/ioc/iface"
+	"github.com/itea-tgl/itea-go/ilog"
+	"github.com/itea-tgl/itea-go/ioc/iface"
 	"net/http"
 	"reflect"
 )
