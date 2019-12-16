@@ -36,20 +36,20 @@ func (pe *ParamsError) setError(err string) {
 	pe.error = err
 }
 
-func NewDatabaseError(err string) *DatabaseError{
+func NewDatabaseError(err error) *DatabaseError{
 	e := &DatabaseError{}
-	e.setError(err)
+	e.setError(err.Error())
 	return e
 }
 
-func NewServerError(err string) *ServerError{
+func NewServerError(err error) *ServerError{
 	e := &ServerError{}
-	e.setError(err)
+	e.setError(err.Error())
 	return e
 }
 
-func NewParamsError(err string) *ParamsError{
+func NewParamsError(err error) *ParamsError{
 	e := &ParamsError{}
-	e.setError(err)
+	e.setError(err.Error())
 	return e
 }
