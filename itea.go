@@ -28,10 +28,7 @@ type Itea struct {
 //Create Itea
 func New(appConfig string, debug bool) *Itea {
 	system.InitConf(appConfig)
-	ctx = context.Background()
-	if debug {
-		ctx = context.WithValue(ctx, constant.DEBUG, true)
-	}
+	ctx = context.WithValue(context.Background(), constant.DEBUG, debug)
 	system.InitLog()
 	return &Itea{
 		process: system.Conf.GetStructArray("application.process", process.Process{}),
