@@ -75,6 +75,24 @@ func (c *HttpClient) Post(u string, p map[string]string, h map[string]string, ho
 	return body, err
 }
 
+func (c *HttpClient) PostJson(u string, p string, h map[string]string, host string, timeout int) ([]byte, error) {
+	var body []byte
+
+	if c.debug {
+		start := time.Now()
+		defer func() {
+			ilog.Info("【POST请求】耗时：", time.Since(start), ", 地址[", u, "], 参数[", p, "], 返回[", string(body),"]")
+		}()
+	}
+
+	if timeout <= 0 {
+		timeout = POST_REQUEST_TIMEOUT
+	}
+
+	body, err := c.doPost(u, h, host, timeout, "application/json;charset=UTF-8", strings.NewReader(p))
+	return body, err
+}
+
 func (c *HttpClient) PostFile(u string, file string, filekey string, p map[string]string, h map[string]string, host string, timeout int, skipHttps bool) ([]byte, error) {
 	var body []byte
 
