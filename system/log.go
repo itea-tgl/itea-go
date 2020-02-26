@@ -13,10 +13,11 @@ type Log struct {
 	Logfile 	string
 	Rotate 		bool
 	Divide		bool
+	Keep 		int
 }
 
 func InitLog() {
-	logtype, logfile, rotate, divide := "", "", false, false
+	logtype, logfile, rotate, divide, keep := "", "", false, false, 0
 	if c := Conf.GetStruct(fmt.Sprintf("%s.%s", Conf.FileName, LOG_KEY), Log{}); c != nil {
 		logConf := c.(*Log)
 		if !strings.EqualFold(logConf.Type, "") {
@@ -27,6 +28,9 @@ func InitLog() {
 		}
 		rotate = logConf.Rotate
 		divide = logConf.Divide
+		if logConf.Keep > 0 {
+			keep = logConf.Keep
+		}
 	}
 	if strings.EqualFold(logtype, "file") {
 		var opts []ilog.IOption
@@ -38,6 +42,9 @@ func InitLog() {
 		}
 		if divide {
 			opts = append(opts, ilog.EnableDivide())
+		}
+		if keep > 0 {
+			opts = append(opts, ilog.FileKeep(keep))
 		}
 		ilog.Init(ilog.LogFile, opts...)
 	} else {
