@@ -29,7 +29,7 @@ func NewItem(p string, o option) *item {
 		rotateFile(i)
 		o.logfile = i.rotateName()
 	}
-	file, err := os.OpenFile(o.logfile, os.O_CREATE|os.O_WRONLY|os.O_APPEND,0)
+	file, err := os.OpenFile(o.logfile, os.O_CREATE|os.O_WRONLY|os.O_APPEND,0666)
 	if err != nil {
 		panic("open log file error !")
 	}
@@ -63,8 +63,8 @@ func rotateFile(i *item) {
 			// 计算下一个零点
 			//next := now.Add(time.Second * 60) //code for test
 			//next = time.Date(next.Year(), next.Month(), next.Day(), next.Hour(), next.Minute(), 0, 0, next.Location()) //code for test
-			next := now.Add(time.Second * 60)
-			next = time.Date(next.Year(), next.Month(), next.Day(), next.Hour(), next.Minute(), 0, 0, next.Location())
+			next := now.Add(time.Hour * 24)
+			next = time.Date(next.Year(), next.Month(), next.Day(), 0, 0, 0, 0, next.Location())
 			t := time.NewTimer(next.Sub(now))
 			<-t.C
 			for _, i := range rotateItems {
@@ -78,7 +78,7 @@ func rotateFile(i *item) {
 func fileRotate(i *item) {
 	name := i.rotateName()
 	for {
-		file, err := os.OpenFile(name, os.O_CREATE|os.O_WRONLY|os.O_APPEND,0)
+		file, err := os.OpenFile(name, os.O_CREATE|os.O_WRONLY|os.O_APPEND,0666)
 		if err == nil {
 			i.log = log.New(file, i.prefix, log.LstdFlags)
 			err = i.file.Close()
