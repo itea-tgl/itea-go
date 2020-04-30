@@ -16,7 +16,7 @@ import (
 func LogProcessInfo() {
 	pid := integer.Itos(os.Getpid())
 	ilog.Info("linux pid : ", pid)
-	file, err := os.OpenFile("pid", os.O_CREATE|os.O_WRONLY,0)
+	file, err := os.OpenFile("pid", os.O_CREATE|os.O_WRONLY,0666)
 	if err != nil {
 		panic("open pid file error !")
 	}
